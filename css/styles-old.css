@@ -14,41 +14,20 @@
 	max-width: 1440px;
 	background: #2e2f42;
 	padding: 188px 0;
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	margin: 0 auto;
+	
+	
 }
 
 .hero-title {
-	font-family: "Roboto", sans-serif;
-	font-weight: 700;
+
 	font-size: 56px;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
-	text-align: center;
-	color: #fff;
-	margin: 0 auto;
 	max-width: 496px;
 }
 
 .hero-btn {
-	min-width: 169px;
-	height: 56px;
-	display: block;
 	margin: 48px auto 0;
-	border-radius: 4px;
-	padding: 16px 32px;
-	background-color: #4d5ae5;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.04em;
-	color: #fff;
-	cursor: pointer;
-	border: none;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
@@ -540,18 +519,7 @@
 .input-form:last-child::placeholder {
 	color: rgba(46, 47, 66, 0.4);
 }
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}
+
 .span-icon-checkbox {
 	display: inline-flex;
 	justify-content: center;
