@@ -374,9 +374,7 @@ address {
 	letter-spacing: 0.04em;
 	color: #fff;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -429,3 +427,88 @@ address {
 			url(../images/people-office-desktop@2x.jpg);
 	}
 }
+
+/* benefit-section-mobile */
+
+.benefits-section {
+	padding: 96px 0;
+}
+
+.benefits-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 72px;
+}
+.benefits-item {
+	width: 100%;
+}
+.container-benefits-icon {
+	display: none;
+}
+.benefits-section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.11;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: #2e2f42;
+	margin-bottom: 8px;
+}
+.benefits-section-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #434455;
+}
+
+/* benefit-section-tablet */
+
+@media screen and (min-width: 768px) {
+	.benefits-list {
+		column-gap: 24px;
+	}
+	.benefits-item {
+		width: calc((100% - 24px) / 2);
+	}
+	.benefits-section-title {
+		text-align: start;
+	}
+}
+
+/* benefit-section-desktop */
+
+@media screen and (min-width: 1158px) {
+	.benefits-list {
+		flex-wrap: nowrap;
+		gap: 24px;
+	}
+	.container-benefits-icon {
+		display: block;
+	}
+	.benefits-list .benefits-item {
+		width: calc((100% - 72px) / 4);
+	}
+	.container-benefits-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #8e8f99;
+		border-radius: 4px;
+		width: 264px;
+		height: 112px;
+		background-color: #f4f4fd;
+		margin-bottom: 8px;
+	}
+	.benefits-section-title {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+	.benefits-section-text {
+		font-weight: 400;
+	}
+}
+
+/* team-section mobile */
