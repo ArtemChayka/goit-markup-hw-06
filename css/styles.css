@@ -517,6 +517,7 @@ address {
 	padding: 96px 0;
 	background-color: #f4f4fd;
 }
+
 .team-section-title {
 	font-weight: 700;
 	font-size: 36px;
@@ -529,7 +530,8 @@ address {
 }
 .team-list {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 72px;
 }
 
@@ -603,11 +605,8 @@ address {
 
 @media screen and (min-width: 768px) {
 	.team-list {
-		flex-direction: row;
-		flex-wrap: wrap;
 		row-gap: 64px;
 		column-gap: 24px;
-		justify-content: center;
 	}
 }
 
