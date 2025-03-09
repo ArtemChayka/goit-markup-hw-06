@@ -32,6 +32,7 @@ ul {
 
 img {
 	display: block;
+	/* width: 100%; */
 }
 
 button {
@@ -540,6 +541,7 @@ address {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	height: auto;
 	background-color: #ffffff;
 	box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 	background-color: #fff;
@@ -608,6 +610,9 @@ address {
 		row-gap: 64px;
 		column-gap: 24px;
 	}
+	/* .team-section-item {
+		width: calc((100% - 24px) / 2);
+	} */
 }
 
 /* team-section desktop */
@@ -620,7 +625,9 @@ address {
 	.team-list {
 		flex-wrap: nowrap;
 		gap: 24px;
-		justify-content: space-between;
 	}
-
+	.team-section-item {
+		width: calc((100% - 72px) / 4);
+		height: auto;
+	}
 }
