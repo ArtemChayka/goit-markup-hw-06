@@ -1,18 +1,4 @@
-
-
-
-
-.text-footer {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: #f4f4fd;
-	width: 264px;
-}
-
 .footer {
-	background: #2e2f42;
 	padding: 100px 0;
 }
 
@@ -28,15 +14,6 @@
 }
 .footer-container-logo {
 	margin-right: 120px;
-}
-
-.footer-social-text {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: #fff;
-	margin-bottom: 16px;
 }
 
 .footer-team-card-list {
@@ -55,27 +32,9 @@
 	justify-content: space-between;
 	align-items: flex-end;
 }
-.footer-subscribe-text {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: #fff;
-	margin-bottom: 16px;
-}
-.studio-footer {
-	color: #f4f4fd;
-}
+
 .input-subscribe {
-	background-color: transparent;
-	border: 1px solid #fff;
-	border-radius: 4px;
 	width: 264px;
-	height: 40px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-	padding: 8px 16px;
-	outline: transparent;
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 2;
@@ -87,35 +46,11 @@
 	border-color: #31d0aa;
 }
 
-.input-subscribe::placeholder {
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 2;
-	letter-spacing: 0.04em;
-	color: #ffffff;
-}
 
 .subscribe-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.04em;
 	text-align: left;
-	color: #fff;
-	border-radius: 4px;
-	border: none;
-	padding: 8px 24px;
-	min-width: 165px;
-	height: 40px;
-	background-color: #4d5ae5;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	cursor: pointer;
 }
 .icon-arrow {
-	fill: #fff;
 	margin-left: 16px;
 }
 
@@ -123,6 +58,13 @@
 .subscribe-btn:focus {
 	background-color: #31d0aa;
 }
+
+
+
+
+
+
+
 
 .backdrop {
 	position: fixed;

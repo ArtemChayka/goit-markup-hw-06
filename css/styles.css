@@ -99,6 +99,7 @@ address {
 }
 
 .logo {
+	display: block;
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 18px;
@@ -750,13 +751,112 @@ address {
 
 /* footer mobile */
 .footer {
+	max-width: 320px;
+	margin: 0 auto;
 	padding: 96px 0;
 	background-color: #2e2f42;
-	display: flex;
-	gap: 72px;
-	align-items: center;
 }
 .footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 72px;
+	justify-content: center;
+}
+.footer .logo {
+	text-align: center;
+}
+.studio-footer {
+	color: #f4f4fd;
+	text-align: center;
+}
+
+.text-footer {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #f4f4fd;
+	/* width: 264px; */
+	margin-top: 16px;
+}
+.footer-team-card-list {
+	display: flex;
+	gap: 16px;
+}
+.footer-social-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #fff;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.footer-subscribe-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+.footer-form-label {
+	display: block;
+}
+.footer-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+.footer-subscribe-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+.input-subscribe {
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	width: 288px;
+	height: 40px;
+	padding: 8px 16px;
+	outline: transparent;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	opacity: 0.3;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-subscribe::placeholder {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+}
+
+.subscribe-btn {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	width: 165px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	padding: 8px 24px;
+	text-align: center;
+	color: #fff;
+	background: #4d5ae5;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-arrow {
+	fill: #fff;
 }
 /* footer tablet */
 /* footer desktop */
