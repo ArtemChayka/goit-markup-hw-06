@@ -241,6 +241,7 @@ address {
 		display: none;
 	}
 }
+
 .mobile-menu {
 	position: fixed;
 	top: 0;
@@ -291,9 +292,6 @@ address {
 	fill: #2e2f42;
 }
 
-.mobile-menu-nav {
-	margin-bottom: auto;
-}
 .mobile-menu-nav-list {
 	display: flex;
 	flex-direction: column;
@@ -313,13 +311,15 @@ address {
 .mobile-menu-nav-list-item.one {
 	color: #404bbf;
 }
-
+.address {
+	margin: auto 0 48px;
+}
 .mobile-menu-address-list {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
-	margin: auto 0 48px;
 }
+
 .mobile-menu-address-link {
 	font-weight: 500;
 	font-size: 20px;
@@ -330,9 +330,9 @@ address {
 .mobile-menu-address-link.one {
 	color: #4d5ae5;
 }
-.team-card-list-mobile-menu {
+.mobile-menu-team-card-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	gap: 40px;
 }
 
@@ -575,8 +575,6 @@ address {
 
 .team-card-list {
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	gap: 24px;
 }
 .card {
