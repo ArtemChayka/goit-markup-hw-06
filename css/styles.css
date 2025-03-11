@@ -891,6 +891,18 @@ address {
 	.footer-container {
 		max-width: 1158px;
 		align-items: baseline;
+		gap: 0;
+	}
+
+	.footer-container-logo {
+		margin-right: auto;
+	}
+	.footer-subscribe-container {
+		margin-left: auto;
+	}
+
+	.input-subscribe::placeholder {
+		opacity: 1;
 	}
 
 	.input-subscribe:hover,
