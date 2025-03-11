@@ -1,26 +1,13 @@
 
 
-.footer .logo {
-	display: inline-block;
-	margin-bottom: 16px;
-}
 
-.footer-container {
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-}
+
+
 .footer-container-logo {
 	margin-right: 120px;
 }
 
-.footer-team-card-list {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	gap: 16px;
-}
+
 .footer-subscribe-container {
 	margin-left: auto;
 }
@@ -31,31 +18,7 @@
 	align-items: flex-end;
 }
 
-.input-subscribe {
-	width: 264px;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 2;
-	letter-spacing: 0.04em;
-	color: #ffffff;
-}
-.input-subscribe:hover,
-.input-subscribe:focus {
-	border-color: #31d0aa;
-}
 
-
-.subscribe-btn {
-	text-align: left;
-}
-.icon-arrow {
-	margin-left: 16px;
-}
-
-.subscribe-btn:hover,
-.subscribe-btn:focus {
-	background-color: #31d0aa;
-}
 
 
 

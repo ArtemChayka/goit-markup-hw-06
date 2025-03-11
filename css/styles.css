@@ -815,7 +815,7 @@ address {
 	background-color: transparent;
 	border: 1px solid #fff;
 	border-radius: 4px;
-	width: 264px;
+	width: 288px;
 	height: 40px;
 	padding: 8px 16px;
 	outline: transparent;
@@ -830,6 +830,7 @@ address {
 	line-height: 2;
 	letter-spacing: 0.04em;
 	color: #ffffff;
+	opacity: 0.6;
 }
 
 .subscribe-btn {
@@ -878,14 +879,27 @@ address {
 	.footer-form {
 		gap: 24px;
 	}
+	.input-subscribe {
+		width: 264px;
+	}
 }
 /* footer desktop */
 @media screen and (min-width: 1158px) {
 	.footer {
 		padding: 100px 0;
 	}
-	.container{
+	.footer-container {
 		max-width: 1158px;
+		align-items: baseline;
 	}
-	
+
+	.input-subscribe:hover,
+	.input-subscribe:focus {
+		border-color: #31d0aa;
+	}
+
+	.subscribe-btn:hover,
+	.subscribe-btn:focus {
+		background-color: #31d0aa;
+	}
 }
