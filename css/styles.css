@@ -318,6 +318,7 @@ address {
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+	margin: auto 0 48px;
 }
 .mobile-menu-address-link {
 	font-weight: 500;
@@ -328,6 +329,11 @@ address {
 }
 .mobile-menu-address-link.one {
 	color: #4d5ae5;
+}
+.team-card-list-mobile-menu {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
 }
 
 /* hero mobile */
@@ -571,7 +577,6 @@ address {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-direction: row;
 	gap: 24px;
 }
 .card {
