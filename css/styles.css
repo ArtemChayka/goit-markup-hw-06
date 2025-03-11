@@ -751,7 +751,6 @@ address {
 
 /* footer mobile */
 .footer {
-	max-width: 320px;
 	margin: 0 auto;
 	padding: 96px 0;
 	background-color: #2e2f42;
@@ -762,12 +761,13 @@ address {
 	gap: 72px;
 	justify-content: center;
 }
+
 .footer .logo {
+	margin-bottom: 16px;
 	text-align: center;
 }
 .studio-footer {
 	color: #f4f4fd;
-	text-align: center;
 }
 
 .text-footer {
@@ -776,8 +776,6 @@ address {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: #f4f4fd;
-	/* width: 264px; */
-	margin-top: 16px;
 }
 .footer-team-card-list {
 	display: flex;
@@ -795,19 +793,11 @@ address {
 
 .footer-subscribe-container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 	gap: 16px;
 }
-.footer-form-label {
-	display: block;
-}
-.footer-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 16px;
-}
+
 .footer-subscribe-text {
 	font-weight: 500;
 	font-size: 16px;
@@ -815,11 +805,17 @@ address {
 	letter-spacing: 0.02em;
 	color: #fff;
 }
+
+.footer-form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
 .input-subscribe {
 	background-color: transparent;
 	border: 1px solid #fff;
 	border-radius: 4px;
-	width: 288px;
+	width: 264px;
 	height: 40px;
 	padding: 8px 16px;
 	outline: transparent;
@@ -847,6 +843,7 @@ address {
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	padding: 8px 24px;
+	margin: 0 auto;
 	text-align: center;
 	color: #fff;
 	background: #4d5ae5;
@@ -855,8 +852,40 @@ address {
 	cursor: pointer;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-arrow {
 	fill: #fff;
 }
 /* footer tablet */
+@media screen and (min-width: 768px) {
+	.footer-container {
+		max-width: 584px;
+		justify-content: flex-start;
+		column-gap: 24px;
+	}
+	.footer-container-logo {
+		max-width: 264px;
+	}
+	.footer .logo {
+		text-align: start;
+	}
+	.footer-social-text {
+		text-align: start;
+	}
+	.footer-subscribe-container {
+		flex-direction: column;
+	}
+	.footer-form {
+		gap: 24px;
+	}
+}
 /* footer desktop */
+@media screen and (min-width: 1158px) {
+	.footer {
+		padding: 100px 0;
+	}
+	.container{
+		max-width: 1158px;
+	}
+	
+}
