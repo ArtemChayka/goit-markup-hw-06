@@ -60,7 +60,7 @@
             <li><a href="" class="mobile-menu-nav-list-item">Contacts</a></li>
           </ul>
         </nav>
-        <address class="address">
+        <address class="mobile-menu-address">
           <ul class="mobile-menu-address-list">
             <li><a href="mailto:info@devstudio.com" class="mobile-menu-address-link">+11 (000) 111-11-11</a></li>
             <li><a href="tel:+110001111111" class="mobile-menu-address-link">info@devstudio.com</a></li>
@@ -442,7 +442,7 @@
         </svg>
       </button>
       <p class="modal-text">Leave your contacts and we will call you back</p>
-      <form action="#">
+      <form class="modal-form" action="#">
         <div class="wrapper-label-input">
           <label for="user-name" class="label-text">Name</label>
           <div class="wrapper-input">
@@ -476,12 +476,16 @@
         </div>
         <div class="wrapper-label-input">
           <input type="checkbox" class="checkbox visually-hidden" id="user-privacy" name="user-privacy" value="true">
-          <label for="user-privacy" class="label-checkbox">
-            <span class="span-icon-checkbox">
-              <svg class="icon-checkbox" width="10" height="8">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
-            </span>I accept the terms and conditions of the <a href="#" class="link-checkbox">Privacy Policy</a></label>
+            <label for="user-privacy" class="label-checkbox">
+              <span class="span-icon-checkbox">
+                <svg class="icon-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              <div class="checkbox-privacy-container">I accept the terms and conditions of the
+                <a href="#" class="link-checkbox">Privacy Policy</a>
+              </div>
+            </label>
         </div>
         <button type="submit" class="submit-btn">Send</button>
       </form>
