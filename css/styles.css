@@ -1077,7 +1077,7 @@ address {
 .label-checkbox {
 	display: flex;
 	align-items: center;
-	gap: 7.5px;
+	gap: 8px;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.17;
@@ -1123,9 +1123,6 @@ address {
 		width: 408px;
 		min-height: 584px;
 		padding: 72px 24px 24px;
-	}
-	.label-checkbox{
-		gap: 8px;
 	}
 	.checkbox-privacy-container {
 		display: flex;
