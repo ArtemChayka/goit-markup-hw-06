@@ -249,7 +249,6 @@ address {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
-	transform: translate(0);
 	transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1),
 		transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -260,7 +259,7 @@ address {
 	pointer-events: auto;
 }
 .mobile-menu:not(.on-open) {
-	transform: translateY(-100%) scale(3);
+	transform: translateY(100%);
 }
 .mobile-menu-container {
 	position: relative;
@@ -599,10 +598,6 @@ address {
 .team-section .card-link:focus {
 	background-color: #404bbf;
 }
-.card-link-footer:hover,
-.card-link-footer:focus {
-	background-color: #31d0aa;
-}
 
 /* team-section tablet */
 
@@ -781,6 +776,11 @@ address {
 	display: flex;
 	gap: 16px;
 }
+.card-link-footer:hover,
+.card-link-footer:focus {
+	background-color: #31d0aa;
+}
+
 .footer-social-text {
 	font-weight: 500;
 	font-size: 16px;
@@ -853,6 +853,10 @@ address {
 	cursor: pointer;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscribe-btn:hover,
+	.subscribe-btn:focus {
+		background-color: #31d0aa;
+	}
 
 .icon-arrow {
 	fill: #fff;
@@ -886,11 +890,6 @@ address {
 	.input-subscribe:hover,
 	.input-subscribe:focus {
 		border-color: #31d0aa;
-	}
-
-	.subscribe-btn:hover,
-	.subscribe-btn:focus {
-		background-color: #31d0aa;
 	}
 }
 /* footer desktop */
@@ -929,16 +928,11 @@ address {
 	pointer-events: none;
 	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
-
 .backdrop.is-open {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: auto;
 }
-.backdrop:not(.is-open) .modal {
-	transform: translate(-50%, -100%) scale(3);
-}
-
 .modal {
 	position: absolute;
 	top: 50%;
@@ -952,7 +946,9 @@ address {
 	background-color: #fcfcfc;
 	transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.backdrop:not(.is-open) .modal {
+	transform: translate(-50%, -100%);
+}
 .close-btn {
 	position: absolute;
 	top: 24px;
@@ -1136,9 +1132,6 @@ address {
 		align-items: center;
 		gap: 4px;
 	}
-	.backdrop:not(.is-open) .modal {
-	transform: scale(5);
-}
 }
 
 /* modal class="is-open" tablet */
