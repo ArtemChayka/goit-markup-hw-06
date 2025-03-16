@@ -327,6 +327,10 @@ address {
 	justify-content: flex-start;
 	gap: 40px;
 }
+.mobile-menu-team-card-list .card-link:hover,
+.mobile-menu-team-card-list .card-link:focus {
+	background-color: #404bbf;
+}
 
 /* hero mobile */
 
